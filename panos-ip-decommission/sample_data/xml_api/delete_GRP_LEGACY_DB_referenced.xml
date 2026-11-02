@@ -1,0 +1,1 @@
+<response status="error" code="10"><msg><line><![CDATA[ GRP_LEGACY_DB cannot be deleted because of references from:]]></line><line><![CDATA[ shared -> address-group -> GRP_LEGACY_ALL -> static]]></line></msg></response>

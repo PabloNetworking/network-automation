@@ -1,0 +1,109 @@
+[
+    {
+        "@name": "Outbound SNAT app",
+        "@uuid": "00a7f926-bdb3-54db-ab5d-e1b7a9c3db24",
+        "@location": "device-group",
+        "@device-group": "DG-Edge",
+        "@loc": "DG-Edge",
+        "from": {
+            "member": [
+                "trust"
+            ]
+        },
+        "to": {
+            "member": [
+                "untrust"
+            ]
+        },
+        "source": {
+            "member": [
+                "GRP_APP_SERVERS"
+            ]
+        },
+        "destination": {
+            "member": [
+                "any"
+            ]
+        },
+        "service": "any",
+        "source-translation": {
+            "dynamic-ip-and-port": {
+                "translated-address": {
+                    "member": [
+                        "H_203.0.113.5"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "@name": "Inbound DNAT db01",
+        "@uuid": "222046d6-f328-5d3b-9b36-af82ffd36219",
+        "@location": "device-group",
+        "@device-group": "DG-Edge",
+        "@loc": "DG-Edge",
+        "from": {
+            "member": [
+                "trust"
+            ]
+        },
+        "to": {
+            "member": [
+                "untrust"
+            ]
+        },
+        "source": {
+            "member": [
+                "any"
+            ]
+        },
+        "destination": {
+            "member": [
+                "H_203.0.113.10"
+            ]
+        },
+        "service": "any",
+        "destination-translation": {
+            "translated-address": "H_192.0.2.11",
+            "translated-port": "1433"
+        }
+    },
+    {
+        "@name": "Outbound SNAT hosts",
+        "@uuid": "ee45c677-1c43-5ec7-9150-2876d110e02c",
+        "@location": "device-group",
+        "@device-group": "DG-Edge",
+        "@loc": "DG-Edge",
+        "from": {
+            "member": [
+                "trust"
+            ]
+        },
+        "to": {
+            "member": [
+                "untrust"
+            ]
+        },
+        "source": {
+            "member": [
+                "H_192.0.2.10",
+                "H_192.0.2.13"
+            ]
+        },
+        "destination": {
+            "member": [
+                "any"
+            ]
+        },
+        "service": "any",
+        "source-translation": {
+            "dynamic-ip-and-port": {
+                "translated-address": {
+                    "member": [
+                        "H_203.0.113.5"
+                    ]
+                }
+            }
+        }
+    }
+]

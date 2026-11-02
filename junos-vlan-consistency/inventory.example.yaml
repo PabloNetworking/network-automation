@@ -1,0 +1,18 @@
+# Copy to inventory.yaml and adjust to your environment.
+#
+# compare_groups: each group lists ae bundles that are expected to carry
+# exactly the same VLANs (for example, all the hosts of one ESXi cluster).
+devices:
+  leaf01:
+    host: 192.0.2.11
+    compare_groups:
+      esxi-cluster-a: [ae1, ae2, ae3, ae4]
+      backup-hosts: [ae10, ae11, ae12]
+
+  leaf02:
+    host: 192.0.2.12
+    # Optional connection settings (defaults shown)
+    device_type: juniper_junos
+    port: 22
+    compare_groups:
+      esxi-cluster-a: [ae1, ae2, ae3, ae4]

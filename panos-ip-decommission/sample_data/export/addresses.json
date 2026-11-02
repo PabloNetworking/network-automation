@@ -1,0 +1,68 @@
+[
+    {
+        "@name": "NET_192.0.2.0_24",
+        "@location": "shared",
+        "ip-netmask": "192.0.2.0/24",
+        "description": "Application servers"
+    },
+    {
+        "@name": "H_192.0.2.10",
+        "@location": "shared",
+        "ip-netmask": "192.0.2.10",
+        "description": "app01"
+    },
+    {
+        "@name": "H_192.0.2.11",
+        "@location": "shared",
+        "ip-netmask": "192.0.2.11/32",
+        "description": "db01"
+    },
+    {
+        "@name": "H_192.0.2.12",
+        "@location": "shared",
+        "ip-netmask": "192.0.2.12",
+        "description": "db02"
+    },
+    {
+        "@name": "H_192.0.2.13",
+        "@location": "shared",
+        "ip-netmask": "192.0.2.13",
+        "description": "app02"
+    },
+    {
+        "@name": "H_198.51.100.21",
+        "@location": "shared",
+        "ip-netmask": "198.51.100.21",
+        "description": "mgmt jump host"
+    },
+    {
+        "@name": "H_203.0.113.5",
+        "@location": "shared",
+        "ip-netmask": "203.0.113.5",
+        "description": "outbound NAT pool"
+    },
+    {
+        "@name": "H_203.0.113.10",
+        "@location": "shared",
+        "ip-netmask": "203.0.113.10",
+        "description": "public VIP db01"
+    },
+    {
+        "@name": "FQDN_updates.example.com",
+        "@location": "shared",
+        "fqdn": "updates.example.com"
+    },
+    {
+        "@name": "RANGE_192.0.2.200-210",
+        "@location": "shared",
+        "ip-range": "192.0.2.200-192.0.2.210"
+    },
+    {
+        "@name": "H_198.51.100.20",
+        "@location": "device-group",
+        "@device-group": "DG-Prod",
+        "@loc": "DG-Prod",
+        "ip-netmask": "198.51.100.20",
+        "description": "backup01"
+    }
+]

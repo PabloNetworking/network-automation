@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Credentials and local settings
+.env
+*.env
+
+# Local inventories and exports (only the *.example.* files are versioned)
+/*/inventory.yaml
+/*/ips.txt
+/*/export/
+/*/raw/
+/*/output/
+/*/report.json
+*.log
+*_commands.txt

@@ -1,0 +1,96 @@
+[
+    {
+        "@name": "Allow DNS from servers",
+        "@uuid": "3cd514ba-13aa-55f3-861f-baffa6001ed9",
+        "@location": "shared",
+        "from": {
+            "member": [
+                "any"
+            ]
+        },
+        "to": {
+            "member": [
+                "any"
+            ]
+        },
+        "source": {
+            "member": [
+                "H_192.0.2.10",
+                "H_192.0.2.13"
+            ]
+        },
+        "destination": {
+            "member": [
+                "any"
+            ]
+        },
+        "source-user": {
+            "member": [
+                "any"
+            ]
+        },
+        "category": {
+            "member": [
+                "any"
+            ]
+        },
+        "application": {
+            "member": [
+                "dns"
+            ]
+        },
+        "service": {
+            "member": [
+                "application-default"
+            ]
+        },
+        "action": "allow"
+    },
+    {
+        "@name": "Allow updates",
+        "@uuid": "0a836b56-caf3-5f40-8b3e-475000b41890",
+        "@location": "shared",
+        "from": {
+            "member": [
+                "any"
+            ]
+        },
+        "to": {
+            "member": [
+                "any"
+            ]
+        },
+        "source": {
+            "member": [
+                "NET_192.0.2.0_24"
+            ]
+        },
+        "destination": {
+            "member": [
+                "FQDN_updates.example.com"
+            ]
+        },
+        "source-user": {
+            "member": [
+                "any"
+            ]
+        },
+        "category": {
+            "member": [
+                "any"
+            ]
+        },
+        "application": {
+            "member": [
+                "ssl",
+                "web-browsing"
+            ]
+        },
+        "service": {
+            "member": [
+                "application-default"
+            ]
+        },
+        "action": "allow"
+    }
+]

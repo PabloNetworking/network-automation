@@ -1,0 +1,93 @@
+{
+    "configuration": {
+        "@": {
+            "junos:commit-seconds": "1700000000",
+            "junos:commit-localtime": "2023-11-14 22:13:20 UTC",
+            "junos:commit-user": "automation"
+        },
+        "vlans": {
+            "vlan": [
+                {
+                    "name": "MGMT",
+                    "vlan-id": 10,
+                    "vxlan": {
+                        "vni": 10010,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                },
+                {
+                    "name": "VMOTION",
+                    "vlan-id": 20,
+                    "vxlan": {
+                        "vni": 10020,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                },
+                {
+                    "name": "STORAGE",
+                    "vlan-id": 30,
+                    "vxlan": {
+                        "vni": 10030,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                },
+                {
+                    "name": "APP_WEB",
+                    "vlan-id": 110,
+                    "vxlan": {
+                        "vni": 10110,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                },
+                {
+                    "name": "APP_DB",
+                    "vlan-id": 120,
+                    "vxlan": {
+                        "vni": 10120,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                },
+                {
+                    "name": "APP_TEST",
+                    "vlan-id": 130,
+                    "vxlan": {
+                        "vni": 10130,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                },
+                {
+                    "name": "BACKUP",
+                    "vlan-id": 200,
+                    "vxlan": {
+                        "vni": 10200,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                },
+                {
+                    "name": "BACKUP_REPL",
+                    "vlan-id": 210,
+                    "vxlan": {
+                        "vni": 10210,
+                        "ingress-node-replication": [
+                            null
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

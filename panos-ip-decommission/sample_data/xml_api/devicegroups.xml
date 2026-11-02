@@ -1,0 +1,17 @@
+<response status="success">
+  <result>
+    <devicegroups>
+      <entry name="DG-Prod">
+        <devices>
+          <entry name="000000000001"><serial>000000000001</serial><connected>yes</connected></entry>
+        </devices>
+      </entry>
+      <entry name="DG-Edge">
+        <devices>
+          <entry name="000000000002"><serial>000000000002</serial><connected>yes</connected></entry>
+        </devices>
+      </entry>
+      <entry name="DG-VPN-Remote"/>
+    </devicegroups>
+  </result>
+</response>

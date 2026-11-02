@@ -1,0 +1,222 @@
+{
+    "configuration": {
+        "@": {
+            "junos:commit-seconds": "1700000000",
+            "junos:commit-localtime": "2023-11-14 22:13:20 UTC",
+            "junos:commit-user": "automation"
+        },
+        "interfaces": {
+            "interface": [
+                {
+                    "name": "xe-0/0/1",
+                    "description": "esx01 vmnic1",
+                    "ether-options": {
+                        "ieee-802.3ad": {
+                            "bundle": "ae1"
+                        }
+                    }
+                },
+                {
+                    "name": "xe-0/0/2",
+                    "description": "esx02 vmnic1",
+                    "ether-options": {
+                        "ieee-802.3ad": {
+                            "bundle": "ae2"
+                        }
+                    }
+                },
+                {
+                    "name": "xe-0/0/3",
+                    "description": "esx03 vmnic1",
+                    "ether-options": {
+                        "ieee-802.3ad": {
+                            "bundle": "ae3"
+                        }
+                    }
+                },
+                {
+                    "name": "xe-0/0/4",
+                    "description": "esx04 vmnic1",
+                    "ether-options": {
+                        "ieee-802.3ad": {
+                            "bundle": "ae4"
+                        }
+                    }
+                },
+                {
+                    "name": "ae1",
+                    "description": "esx01",
+                    "mtu": 9216,
+                    "esi": {
+                        "identifier": "00:11:11:11:11:11:00:00:00:01",
+                        "all-active": [
+                            null
+                        ]
+                    },
+                    "aggregated-ether-options": {
+                        "lacp": {
+                            "active": [
+                                null
+                            ],
+                            "periodic": "fast"
+                        }
+                    },
+                    "unit": [
+                        {
+                            "name": 0,
+                            "family": {
+                                "ethernet-switching": {
+                                    "interface-mode": "trunk",
+                                    "vlan": {
+                                        "members": [
+                                            "MGMT",
+                                            "VMOTION",
+                                            "STORAGE",
+                                            "APP_WEB",
+                                            "APP_DB",
+                                            "BACKUP"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ae2",
+                    "description": "esx02",
+                    "mtu": 9216,
+                    "esi": {
+                        "identifier": "00:11:11:11:11:11:00:00:00:02",
+                        "all-active": [
+                            null
+                        ]
+                    },
+                    "aggregated-ether-options": {
+                        "lacp": {
+                            "active": [
+                                null
+                            ],
+                            "periodic": "fast"
+                        }
+                    },
+                    "unit": [
+                        {
+                            "name": 0,
+                            "family": {
+                                "ethernet-switching": {
+                                    "interface-mode": "trunk",
+                                    "vlan": {
+                                        "members": [
+                                            "MGMT",
+                                            "VMOTION",
+                                            "STORAGE",
+                                            "APP_WEB",
+                                            "APP_DB",
+                                            "BACKUP"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ae3",
+                    "description": "esx03",
+                    "mtu": 9216,
+                    "esi": {
+                        "identifier": "00:11:11:11:11:11:00:00:00:03",
+                        "all-active": [
+                            null
+                        ]
+                    },
+                    "aggregated-ether-options": {
+                        "lacp": {
+                            "active": [
+                                null
+                            ],
+                            "periodic": "fast"
+                        }
+                    },
+                    "unit": [
+                        {
+                            "name": 0,
+                            "family": {
+                                "ethernet-switching": {
+                                    "interface-mode": "trunk",
+                                    "vlan": {
+                                        "members": [
+                                            "MGMT",
+                                            "VMOTION",
+                                            "STORAGE",
+                                            "APP_WEB",
+                                            "APP_DB",
+                                            "BACKUP"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ae4",
+                    "description": "esx04",
+                    "mtu": 9216,
+                    "esi": {
+                        "identifier": "00:11:11:11:11:11:00:00:00:04",
+                        "all-active": [
+                            null
+                        ]
+                    },
+                    "aggregated-ether-options": {
+                        "lacp": {
+                            "active": [
+                                null
+                            ],
+                            "periodic": "fast"
+                        }
+                    },
+                    "unit": [
+                        {
+                            "name": 0,
+                            "family": {
+                                "ethernet-switching": {
+                                    "interface-mode": "trunk",
+                                    "vlan": {
+                                        "members": [
+                                            "MGMT",
+                                            "VMOTION",
+                                            "STORAGE",
+                                            "APP_WEB",
+                                            "APP_DB",
+                                            "BACKUP"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "lo0",
+                    "unit": [
+                        {
+                            "name": 0,
+                            "family": {
+                                "inet": {
+                                    "address": [
+                                        {
+                                            "name": "198.51.100.12/32"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

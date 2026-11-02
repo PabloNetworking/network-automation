@@ -1,0 +1,28 @@
+{
+    "op": {
+        "<show><devicegroups></devicegroups></show>": "devicegroups.xml",
+        "<check><pending-changes></pending-changes></check>": "pending_changes_no.xml",
+        "<revert><config></config></revert>": "revert.xml"
+    },
+    "delete": {
+        "/config/shared/address/entry[@name='H_192.0.2.10']": "delete_H_192.0.2.10_referenced.xml",
+        "/config/shared/address/entry[@name='H_192.0.2.11']": "delete_H_192.0.2.11_referenced.xml",
+        "/config/shared/address/entry[@name='H_192.0.2.12']": "delete_H_192.0.2.12_referenced.xml",
+        "/config/shared/address-group/entry[@name='GRP_LEGACY_DB']": "delete_GRP_LEGACY_DB_referenced.xml",
+        "/config/shared/address-group/entry[@name='GRP_LEGACY_ALL']": "delete_GRP_LEGACY_ALL_referenced.xml",
+        "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG-Edge']/address/entry[@name='H_192.0.2.10']": "delete_success.xml"
+    },
+    "show": {
+        "/config/shared/address-group/entry[@name='GRP_APP_SERVERS']": "show_GRP_APP_SERVERS.xml",
+        "/config/shared/address-group/entry[@name='GRP_LEGACY_DB']": "show_GRP_LEGACY_DB.xml",
+        "/config/shared/address-group/entry[@name='GRP_LEGACY_ALL']": "show_GRP_LEGACY_ALL.xml",
+        "/config/shared/address-group/entry[@name='GRP_MONITORED']": "show_GRP_MONITORED.xml",
+        "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG-Prod']/post-rulebase/security/rules/entry[@name='Allow mgmt to hosts']": "show_rule_allow_mgmt_to_hosts.xml",
+        "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG-Prod']/post-rulebase/security/rules/entry[@name='Allow backup']": "show_rule_allow_backup.xml",
+        "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG-Prod']/post-rulebase/security/rules/entry[@name='Allow legacy DB']": "show_rule_allow_legacy_db.xml",
+        "/config/shared/pre-rulebase/security/rules/entry[@name='Allow DNS from servers']": "show_rule_allow_dns_from_servers.xml",
+        "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG-Edge']/post-rulebase/nat/rules/entry[@name='Outbound SNAT hosts']": "show_nat_outbound_snat_hosts.xml",
+        "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG-Edge']/post-rulebase/nat/rules/entry[@name='Inbound DNAT db01']": "show_nat_inbound_dnat_db01.xml"
+    },
+    "default_delete": "delete_not_found.xml"
+}

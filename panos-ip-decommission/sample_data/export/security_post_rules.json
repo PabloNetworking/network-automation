@@ -1,0 +1,246 @@
+[
+    {
+        "@name": "Allow web to app",
+        "@uuid": "d5c2a595-b7af-5597-b394-95c4524ac413",
+        "@location": "device-group",
+        "@device-group": "DG-Prod",
+        "@loc": "DG-Prod",
+        "from": {
+            "member": [
+                "any"
+            ]
+        },
+        "to": {
+            "member": [
+                "any"
+            ]
+        },
+        "source": {
+            "member": [
+                "NET_192.0.2.0_24"
+            ]
+        },
+        "destination": {
+            "member": [
+                "GRP_APP_SERVERS"
+            ]
+        },
+        "source-user": {
+            "member": [
+                "any"
+            ]
+        },
+        "category": {
+            "member": [
+                "any"
+            ]
+        },
+        "application": {
+            "member": [
+                "any"
+            ]
+        },
+        "service": {
+            "member": [
+                "service-https"
+            ]
+        },
+        "action": "allow"
+    },
+    {
+        "@name": "Allow legacy DB",
+        "@uuid": "1e8856c3-1e38-5437-9dfd-525e283e0571",
+        "@location": "device-group",
+        "@device-group": "DG-Prod",
+        "@loc": "DG-Prod",
+        "from": {
+            "member": [
+                "any"
+            ]
+        },
+        "to": {
+            "member": [
+                "any"
+            ]
+        },
+        "source": {
+            "member": [
+                "GRP_APP_SERVERS"
+            ]
+        },
+        "destination": {
+            "member": [
+                "GRP_LEGACY_ALL"
+            ]
+        },
+        "source-user": {
+            "member": [
+                "any"
+            ]
+        },
+        "category": {
+            "member": [
+                "any"
+            ]
+        },
+        "application": {
+            "member": [
+                "any"
+            ]
+        },
+        "service": {
+            "member": [
+                "service-mssql"
+            ]
+        },
+        "action": "allow"
+    },
+    {
+        "@name": "Allow mgmt to hosts",
+        "@uuid": "450ed204-6fde-53f1-b701-ca4b3a14ea0e",
+        "@location": "device-group",
+        "@device-group": "DG-Prod",
+        "@loc": "DG-Prod",
+        "from": {
+            "member": [
+                "any"
+            ]
+        },
+        "to": {
+            "member": [
+                "any"
+            ]
+        },
+        "source": {
+            "member": [
+                "H_198.51.100.21"
+            ]
+        },
+        "destination": {
+            "member": [
+                "H_192.0.2.10",
+                "H_192.0.2.13"
+            ]
+        },
+        "source-user": {
+            "member": [
+                "any"
+            ]
+        },
+        "category": {
+            "member": [
+                "any"
+            ]
+        },
+        "application": {
+            "member": [
+                "ssh",
+                "ms-rdp"
+            ]
+        },
+        "service": {
+            "member": [
+                "application-default"
+            ]
+        },
+        "action": "allow"
+    },
+    {
+        "@name": "Allow backup",
+        "@uuid": "11d28d37-97b9-5ead-9c64-7b7aadda66e4",
+        "@location": "device-group",
+        "@device-group": "DG-Prod",
+        "@loc": "DG-Prod",
+        "from": {
+            "member": [
+                "any"
+            ]
+        },
+        "to": {
+            "member": [
+                "any"
+            ]
+        },
+        "source": {
+            "member": [
+                "H_198.51.100.20",
+                "H_192.0.2.12"
+            ]
+        },
+        "destination": {
+            "member": [
+                "H_198.51.100.21"
+            ]
+        },
+        "source-user": {
+            "member": [
+                "any"
+            ]
+        },
+        "category": {
+            "member": [
+                "any"
+            ]
+        },
+        "application": {
+            "member": [
+                "any"
+            ]
+        },
+        "service": {
+            "member": [
+                "any"
+            ]
+        },
+        "action": "allow"
+    },
+    {
+        "@name": "Allow monitoring",
+        "@uuid": "1aeb7676-6d36-56ea-94de-f032fd4881a9",
+        "@location": "device-group",
+        "@device-group": "DG-Prod",
+        "@loc": "DG-Prod",
+        "from": {
+            "member": [
+                "any"
+            ]
+        },
+        "to": {
+            "member": [
+                "any"
+            ]
+        },
+        "source": {
+            "member": [
+                "H_198.51.100.21"
+            ]
+        },
+        "destination": {
+            "member": [
+                "GRP_MONITORED"
+            ]
+        },
+        "source-user": {
+            "member": [
+                "any"
+            ]
+        },
+        "category": {
+            "member": [
+                "any"
+            ]
+        },
+        "application": {
+            "member": [
+                "ping",
+                "snmp"
+            ]
+        },
+        "service": {
+            "member": [
+                "application-default"
+            ]
+        },
+        "action": "allow"
+    }
+]

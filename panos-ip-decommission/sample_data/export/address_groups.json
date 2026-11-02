@@ -1,0 +1,50 @@
+[
+    {
+        "@name": "GRP_APP_SERVERS",
+        "@location": "shared",
+        "static": {
+            "member": [
+                "H_192.0.2.10",
+                "H_192.0.2.13"
+            ]
+        }
+    },
+    {
+        "@name": "GRP_LEGACY_DB",
+        "@location": "shared",
+        "static": {
+            "member": [
+                "H_192.0.2.11",
+                "H_192.0.2.12"
+            ]
+        }
+    },
+    {
+        "@name": "GRP_LEGACY_ALL",
+        "@location": "shared",
+        "static": {
+            "member": [
+                "GRP_LEGACY_DB"
+            ]
+        }
+    },
+    {
+        "@name": "GRP_MONITORED",
+        "@location": "shared",
+        "static": {
+            "member": [
+                "GRP_LEGACY_ALL",
+                "H_192.0.2.13"
+            ]
+        }
+    },
+    {
+        "@name": "GRP_TAGGED_WEB",
+        "@location": "device-group",
+        "@device-group": "DG-Prod",
+        "@loc": "DG-Prod",
+        "dynamic": {
+            "filter": "'web'"
+        }
+    }
+]
